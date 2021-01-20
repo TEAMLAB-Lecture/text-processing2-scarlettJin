@@ -77,7 +77,7 @@ def to_camel_case(underscore_str):
     word_list = underscore_str.split("_")
 
     # case 1 : no underline
-    if len(word_list) == 1:
+    if len(word_list) == 1 or underscore_str=="":
         return underscore_str
     
     # case 2: empty string or only underlines
