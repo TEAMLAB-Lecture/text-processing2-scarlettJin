@@ -73,11 +73,10 @@ def to_camel_case(underscore_str):
             "alreadyCamel"
     """
     camelcase_str = ""
-    underscore_str = underscore_str.strip()
     word_list = underscore_str.split("_")
 
     # case 1 : no underline
-    if len(word_list) == 1 or underscore_str=="":
+    if len(word_list) == 1 or underscore_str.strip()=="":
         return underscore_str
     
     # case 2: empty string or only underlines
